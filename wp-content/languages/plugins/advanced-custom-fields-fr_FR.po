@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Advanced Custom Fields (ACF) - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-04-04 15:03:24+0000\n"
+"PO-Revision-Date: 2023-04-28 19:22:31+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,18 @@ msgstr ""
 "X-Generator: GlotPress/4.0.0-alpha.4\n"
 "Language: fr\n"
 "Project-Id-Version: Plugins - Advanced Custom Fields (ACF) - Stable (latest release)\n"
+
+#: includes/post-types/class-acf-taxonomy.php:278
+msgid "This taxonomy key is already in use by another taxonomy registered outside of ACF and cannot be used."
+msgstr "Cette clé de taxonomie est déjà utilisée par une autre taxonomie enregistrée en dehors d’ACF et ne peut pas être utilisée."
+
+#: includes/post-types/class-acf-taxonomy.php:273
+msgid "This taxonomy key is already in use by another taxonomy in ACF and cannot be used."
+msgstr "Cette clé de taxonomie est déjà utilisée par une autre taxonomie dans ACF et ne peut pas être utilisée."
+
+#: includes/post-types/class-acf-taxonomy.php:241
+msgid "The taxonomy key must be under 20 characters."
+msgstr "La clé de taxonomie doit comporter moins de 20 caractères."
 
 #: includes/post-types/class-acf-taxonomy.php:99
 msgid "No Taxonomies found in Trash"
@@ -39,9 +51,21 @@ msgstr "Modifier la taxonomie"
 msgid "Add New Taxonomy"
 msgstr "Ajout une  nouvelle taxinomie"
 
+#: includes/post-types/class-acf-post-type.php:99
+msgid "No Post Types found in Trash"
+msgstr "Aucun type de publication trouvé dans la corbeille"
+
+#: includes/post-types/class-acf-post-type.php:98
+msgid "No Post Types found"
+msgstr "Aucun type de publication trouvé"
+
 #: includes/post-types/class-acf-post-type.php:95
 msgid "New Post Type"
 msgstr "Nouveau type de publication"
+
+#: includes/post-types/class-acf-post-type.php:94
+msgid "Edit Post Type"
+msgstr "Modifier le type de publication"
 
 #: includes/post-types/class-acf-post-type.php:338
 msgid "This post type key is already in use by another post type registered outside of ACF and cannot be used."
@@ -50,6 +74,138 @@ msgstr "Cette clé de type de publication est déjà utilisée par un autre type
 #: includes/post-types/class-acf-post-type.php:333
 msgid "This post type key is already in use by another post type in ACF and cannot be used."
 msgstr "Cette clé de type de publication est déjà utilisée par un autre type de publication dans ACF et ne peut pas être utilisée."
+
+#. translators: %s a link to WordPress.org's Reserved Terms page
+#: includes/post-types/class-acf-post-type.php:312
+#: includes/post-types/class-acf-taxonomy.php:252
+msgid "This field must not be a WordPress <a href=\"%s\" target=\"_blank\">reserved term</a>."
+msgstr "Ce champ ne doit pas être un <a href=\"%s\" target=\"_blank\">terme réservé</a> WordPress."
+
+#: includes/fields/class-acf-field-wysiwyg.php:27
+msgid "We do not recommend using this field in ACF Blocks."
+msgstr "Nous vous déconseillons d’utiliser ce champ dans les blocs ACF."
+
+#: includes/fields/class-acf-field-wysiwyg.php:25
+msgid "WYSIWYG Editor"
+msgstr "Éditeur WYSIWYG"
+
+#: includes/fields/class-acf-field-url.php:25
+msgid "URL"
+msgstr "URL"
+
+#: includes/post-types/class-acf-taxonomy.php:246
+msgid "The taxonomy key must only contain lower case alphanumeric characters, underscores or dashes."
+msgstr "La clé de taxonomie doit uniquement contenir des caractères alphanumériques, des tirets bas ou des tirets."
+
+#: includes/post-types/class-acf-post-type.php:97
+msgid "Search Post Types"
+msgstr "Rechercher des types de publication"
+
+#: includes/post-types/class-acf-post-type.php:96
+msgid "View Post Type"
+msgstr "Voir le type de publication"
+
+#: includes/post-types/class-acf-post-type.php:93
+msgid "Add New Post Type"
+msgstr "Ajouter un nouveau type de publication personnalisé"
+
+#: includes/post-types/class-acf-post-type.php:306
+msgid "The post type key must only contain lower case alphanumeric characters, underscores or dashes."
+msgstr "La clé du type de publication doit contenir uniquement des caractères alphanumériques, des tirets bas ou des tirets."
+
+#: includes/post-types/class-acf-post-type.php:301
+msgid "The post type key must be under 20 characters."
+msgstr "La clé du type de publication doit comporter moins de 20 caractères."
+
+#: includes/fields.php:355
+msgid "Advanced"
+msgstr "Avancé"
+
+#: includes/ajax/class-acf-ajax-local-json-diff.php:85
+msgid "JSON (newer)"
+msgstr "JSON (plus récent)"
+
+#: includes/ajax/class-acf-ajax-local-json-diff.php:81
+msgid "Original"
+msgstr "Original"
+
+#: includes/admin/views/global/navigation.php:104
+msgid "More"
+msgstr "Plus"
+
+#: includes/admin/views/browse-fields-modal.php:86
+msgid "Tutorial"
+msgstr "Tutoriel"
+
+#. translators: %s: A link to the popular fields used in ACF
+#: includes/admin/views/browse-fields-modal.php:50
+msgid "Try a different search term or browse %s"
+msgstr "Essayez un autre terme de recherche ou parcourez %s"
+
+#: includes/admin/views/browse-fields-modal.php:13
+msgid "Search fields..."
+msgstr "Rechercher des champs…"
+
+#: includes/admin/views/browse-fields-modal.php:11
+msgid "Select Field Type"
+msgstr "Sélectionner le type de champ"
+
+#: includes/admin/views/browse-fields-modal.php:4
+msgid "Popular"
+msgstr "Populaire"
+
+#: includes/admin/views/acf-taxonomy/list-empty.php:5
+msgid "Add Your First Taxonomy"
+msgstr "Ajouter votre première taxonomie"
+
+#. translators: example taxonomy
+#: includes/admin/views/acf-taxonomy/basic-settings.php:44
+msgid "genre"
+msgstr "genre"
+
+#. translators: example taxonomy
+#: includes/admin/views/acf-taxonomy/basic-settings.php:26
+msgid "Genre"
+msgstr "Genre"
+
+#. translators: example taxonomy
+#: includes/admin/views/acf-taxonomy/basic-settings.php:9
+msgid "Genres"
+msgstr "Genres"
+
+#: includes/admin/views/acf-taxonomy/advanced-settings.php:1073
+msgid "Expose this post type in the REST API."
+msgstr "Exposez ce type de publication dans l’API REST."
+
+#: includes/admin/views/acf-taxonomy/advanced-settings.php:1051
+msgid "Customize the query variable name"
+msgstr "Personnaliser le nom de la variable de requête"
+
+#: includes/admin/views/acf-taxonomy/advanced-settings.php:977
+msgid "Parent-child terms in URLs for hierarchical taxonomies."
+msgstr "Termes parent-enfant dans les URL pour les taxonomies hiérarchiques."
+
+#: includes/admin/views/acf-taxonomy/advanced-settings.php:937
+msgid "Customize the slug used in the URL"
+msgstr "Personnaliser le slug utilisé dans l’URL"
+
+#: includes/admin/views/acf-taxonomy/advanced-settings.php:909
+#: includes/admin/views/acf-taxonomy/advanced-settings.php:1026
+#: includes/admin/views/acf-taxonomy/basic-settings.php:41
+msgid "Taxonomy Key"
+msgstr "Clé de taxonomie"
+
+#: includes/admin/views/acf-taxonomy/advanced-settings.php:907
+msgid "Select the type of permalink to use for this taxonomy."
+msgstr "Sélectionnez le type de permalien à utiliser pour cette taxonomie."
+
+#: includes/admin/views/acf-taxonomy/advanced-settings.php:877
+msgid "Quick Edit"
+msgstr "Modification rapide"
+
+#: includes/admin/views/acf-taxonomy/advanced-settings.php:863
+msgid "Tag Cloud"
+msgstr "Nuage d’étiquettes"
 
 #: includes/admin/views/acf-post-type/advanced-settings.php:976
 msgid "Can Export"
@@ -369,6 +525,81 @@ msgstr "Visibilité"
 msgid "Labels"
 msgstr "Libellés"
 
+#: includes/fields.php:441
+msgctxt "noun"
+msgid "Clone"
+msgstr "Cloner"
+
+#: includes/fields.php:357
+msgid "PRO"
+msgstr "Pro"
+
+#: includes/ajax/class-acf-ajax-local-json-diff.php:55
+msgid "Invalid post ID."
+msgstr "ID de publication invalide."
+
+#: includes/ajax/class-acf-ajax-local-json-diff.php:47
+msgid "Invalid post type selected for review."
+msgstr "Type de publication sélectionné pour révision invalide."
+
+#: includes/admin/views/browse-fields-modal.php:75
+msgid "Available with ACF PRO"
+msgstr "Disponible avec ACF Pro"
+
+#: includes/admin/views/browse-fields-modal.php:63
+msgid "Select Field"
+msgstr "Sélectionner le champ"
+
+#: includes/admin/views/browse-fields-modal.php:47
+msgid "Popular fields"
+msgstr "Champs populaires"
+
+#. translators: %s: The invalid search term
+#: includes/admin/views/browse-fields-modal.php:40
+msgid "No search results for '%s'"
+msgstr "Aucun résultat de recherche pour « %s »"
+
+#: includes/admin/views/acf-taxonomy/basic-settings.php:79
+msgid "One or many post types that can be classified with this taxonomy."
+msgstr "Un ou plusieurs types de publication peuvant être classés avec cette taxonomie."
+
+#: includes/admin/views/acf-taxonomy/basic-settings.php:95
+msgid "Makes a taxonomy visible on the frontend and in the admin dashboard."
+msgstr "Rend une taxonomie visible sur l’interface publique et dans le tableau de bord d’administration."
+
+#: includes/admin/views/acf-taxonomy/basic-settings.php:110
+msgid "Hierarchical taxonomies can have descendants (like categories)."
+msgstr "Les taxonomies hiérarchiques peuvent avoir des enfants (comme les catégories)."
+
+#: includes/admin/views/acf-taxonomy/list-empty.php:6
+msgid "Create custom taxonomies to classify post type content"
+msgstr "Créer des taxonomies personnalisées pour classer le contenu du type de publication"
+
+#: includes/admin/views/acf-taxonomy/list-empty.php:7
+msgid "Add Taxonomy"
+msgstr "Ajouter une taxonomie"
+
+#: includes/admin/views/acf-taxonomy/advanced-settings.php:920
+msgid "Permalinks for this taxonomy are disabled."
+msgstr "Les permaliens sont désactivés pour cette taxonomie."
+
+#. translators: this string will be appended with the new permalink structure.
+#: includes/admin/views/acf-taxonomy/advanced-settings.php:917
+msgid "Rewrite the URL using the taxonomy key as the slug. Your permalink structure will be"
+msgstr "Réécrire l’URL en utilisant la clé de taxonomie comme slug. Votre structure de permalien sera"
+
+#: includes/admin/views/acf-taxonomy/advanced-settings.php:891
+msgid "Show Admin Column"
+msgstr "Afficher la colonne « Admin »"
+
+#: includes/admin/views/acf-taxonomy/advanced-settings.php:878
+msgid "Show the taxonomy in the quick/bulk edit panel."
+msgstr "Afficher la taxonomie dans le panneau de modification rapide/groupée."
+
+#: includes/admin/views/acf-taxonomy/advanced-settings.php:864
+msgid "List the taxonomy in the Tag Cloud Widget controls."
+msgstr "Lister la taxonomie dans les contrôles du widget « Nuage d’étiquettes »."
+
 #: includes/api/api-template.php:867
 msgid "[ACF shortcode value disabled for preview]"
 msgstr "[Valeur du code court ACF désactivée pour l’aperçu]"
@@ -597,6 +828,14 @@ msgstr "Inactif"
 #. Author of the plugin
 msgid "WP Engine"
 msgstr "WP Engine"
+
+#: acf.php:543
+msgid "Advanced Custom Fields and Advanced Custom Fields PRO should not be active at the same time. We've automatically deactivated Advanced Custom Fields PRO."
+msgstr "Advanced Custom Fields et Advanced Custom Fields Pro ne doivent pas être actives en même temps. Nous avons automatiquement désactivé Advanced Custom Fields Pro."
+
+#: acf.php:541
+msgid "Advanced Custom Fields and Advanced Custom Fields PRO should not be active at the same time. We've automatically deactivated Advanced Custom Fields."
+msgstr "Advanced Custom Fields et Advanced Custom Fields Pro ne doivent pas être actives en même temps. Nous avons automatiquement désactivé Advanced Custom Fields."
 
 #: includes/acf-value-functions.php:374
 msgid "<strong>%1$s</strong> - We've detected one or more calls to retrieve ACF field values before ACF has been initialized. This is not supported and can result in malformed or missing data. <a href=\"%2$s\" target=\"_blank\">Learn how to fix this</a>."
@@ -839,6 +1078,10 @@ msgstr "Le type d’emplacement « %s » est déjà inscrit."
 #: includes/ajax/class-acf-ajax-local-json-diff.php:42
 msgid "Invalid field group parameter(s)."
 msgstr "Paramètres de groupe de champ invalides."
+
+#: includes/ajax/class-acf-ajax-local-json-diff.php:70
+msgid "Sorry, this post is unavailable for diff comparison."
+msgstr "Désolé, cette publication n’est pas disponible pour la comparaison de différence."
 
 #: includes/ajax/class-acf-ajax.php:157
 msgid "Invalid nonce."
