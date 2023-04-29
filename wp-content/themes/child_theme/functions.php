@@ -27,9 +27,17 @@ function spacemono_font_url() {
     }
     return $font_url;
 }
-function gfont_script() {
+function poppins_font_url() {
+    $font_url = '';
+    if ( 'off' !== _x( 'on', 'Google font: on or off', 'poppins' ) ) {
+        $font_url = add_query_arg( 'family', urlencode( 'Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900' ), "//fonts.googleapis.com/css" );
+    }
+    return $font_url;
+}
+function gfonts_scripts() {
 
     wp_enqueue_style( 'spacemono_font', spacemono_font_url(), array(), '1.0.0' );
+    wp_enqueue_style( 'poppins_font', poppins_font_url(), array(), '1.0.0' );
 
 }
-add_action( 'wp_enqueue_scripts', 'gfont_script' );
+add_action( 'wp_enqueue_scripts', 'gfonts_scripts' );

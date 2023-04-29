@@ -19,8 +19,51 @@ body {
     font-family: 'Space Mono';
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Space Mono';
+}
+
+.flex_row{
+    display: flex;
+}
+
+.flex_col{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Button */
+a.button{
+    font-family: 'Space Mono';
+    color: black; 
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    background-color: #fff !important;
+    padding: 10px 40px !important;
+    border-radius: 0px;
+    text-align: center;
+    border-left: 5px solid black;
+    background: linear-gradient(to right, black 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+}
+a.button:hover {
+    color: white;  
+    background-position: left bottom;
+}
+
 
 /* Header */
+.site-header {
+    box-shadow: 0px 4px 14px 10px rgba(0, 0, 0, 0.03);
+}
 .header__navigation{
     margin: -10px 0 -10px 0 !important;
 }
@@ -66,4 +109,83 @@ body {
     font-size: 16px;
     font-weight: 700;
     text-decoration: none;
+}
+
+/*  Single photo */
+.content-area{
+  padding: 5% 10%;  
+}
+
+.photo_header{
+    justify-content: space-between;
+    align-items:flex-end;
+}
+.photo_header h1{
+    font-style: italic;
+    font-weight: 400;
+    font-size: 66px;
+    line-height: 58px;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+}
+.single_photo_content{
+
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+    border-bottom: 1px solid black;
+    padding-bottom: 40px
+}
+
+.single_photo_content p{
+
+    margin: 0 0 5px 0;
+}
+
+.single_photo_thumb{
+
+    width: 49%;
+}
+
+.photo_contact_wrapper{
+    padding: 55px 0 20px 0;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+
+.photo_contact_wrapper span{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.photo_contact_wrapper a.button{
+    margin-left: 20px;
+    margin-bottom: -6px;
+}
+
+.single_photo_next_img img {
+    float: right;
+    max-width: 80px;
+
+}
+
+.photo_contact_button{
+    width: 92%;
+}
+.photo_contact_img{
+    width: 8%;
+    height: 108px;
+    margin-top: -30px;
+    display: flex;
+    justify-content: center;
+}
+.single_photo_next_nav{
+    margin-top: -5px;
+}
+.photo_nnext_arrow_right{
+    float: right;
+    margin-top: 8px;
 }
