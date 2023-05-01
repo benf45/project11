@@ -41,3 +41,16 @@ function gfonts_scripts() {
 
 }
 add_action( 'wp_enqueue_scripts', 'gfonts_scripts' );
+
+/*
+** Enqueue scripts and styles
+*/
+function theme_scripts() {
+
+    // Enqueue Custom Script
+	wp_enqueue_script( 'theme-custom-script', get_theme_file_uri( '/dist/js/custom-scripts.js' ), array( 'jquery' ), null, true );
+
+
+	
+}
+add_action( 'wp_enqueue_scripts', 'theme_scripts' );

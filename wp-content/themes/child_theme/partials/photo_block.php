@@ -9,4 +9,4 @@
 
 ?>
 
-<a href="<?php echo get_permalink(get_the_ID());?>"><div class="photo_block"><?php the_post_thumbnail('medium_large') ?></div></a>
+<div class="photo_block"><a href="<?php echo get_permalink(get_the_ID());?>"><?php the_post_thumbnail('medium_large') ?></a></div>

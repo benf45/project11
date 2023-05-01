@@ -49,7 +49,7 @@ var_dump($post_datas);*/
 
 			    <div class="photo_contact_button">
 			        <span>Cette photo vous intéresse ?</span>
-				    <a class="button" href="#">Contact</a>
+					<button class="button modal_open">Contact</button>
 				</div>
 
 			    <div class="photo_contact_img flex_col">
@@ -77,7 +77,7 @@ var_dump($post_datas);*/
 						    <?php echo previous_post_link('%link', '<img src="'.get_stylesheet_directory_uri().'/partials/layouts/images/arrow_left.png" alt="Fléche gauche">');?>
 						</span>
 
-				        <span class="photo_nnext_arrow_right">
+				        <span class="photo_next_arrow_right">
 							<?php echo next_post_link('%link', '<img src="'.get_stylesheet_directory_uri().'/partials/layouts/images/arrow_right.png" alt="Fléche droite">');?>
 						</span>
 

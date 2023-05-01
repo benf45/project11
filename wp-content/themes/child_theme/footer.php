@@ -9,6 +9,10 @@
 
 	</main>
 
+	<?php
+    get_template_part( 'partials/modal' );
+	?>
+
 	<?php Go\footer_variation(); ?>
 
 	</div>

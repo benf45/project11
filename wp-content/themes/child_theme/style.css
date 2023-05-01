@@ -37,7 +37,7 @@ h6{
     flex-direction: column;
 }
 
-/* Button */
+/* Button link*/
 a.button{
     font-family: 'Space Mono';
     color: black; 
@@ -58,6 +58,29 @@ a.button:hover {
     color: white;  
     background-position: left bottom;
 }
+
+/* Button */
+button.button{
+    font-family: 'Space Mono';
+    color: black; 
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    background-color: #fff !important;
+    padding: 10px 40px !important;
+    border-radius: 0px;
+    text-align: center;
+    border-left: 5px solid black;
+    background: linear-gradient(to right, black 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+}
+button.button:hover {
+    color: white;  
+    background-position: left bottom;
+}
+
 
 
 /* Header */
@@ -114,6 +137,23 @@ padding: 40px 170px;
     text-decoration: none;
 }
 
+@media (max-width: 375px){
+    .site-footer{
+       margin-top: 0px;
+    }
+    .site-footer .footer-navigation{
+
+        padding-top: 30px !important;
+        padding-bottom: 30px !important;
+   
+    }
+    .site-footer .footer-navigation li a{
+
+        padding-bottom: 20px!important;
+        
+    }
+}
+
 /*  Single photo */
 .content-area{
   padding: 2% 10% 0 10%;  
@@ -164,7 +204,7 @@ padding: 40px 170px;
     line-height: 21px;
 }
 
-.photo_contact_wrapper a.button{
+.photo_contact_wrapper .button{
     margin-left: 20px;
     margin-bottom: -6px;
 }
@@ -172,7 +212,6 @@ padding: 40px 170px;
 .single_photo_next_img img {
     float: right;
     max-width: 80px;
-
 }
 
 .photo_contact_button{
@@ -188,9 +227,9 @@ padding: 40px 170px;
 .single_photo_next_nav{
     margin-top: -5px;
 }
-.photo_nnext_arrow_right{
+.photo_next_arrow_right{
     float: right;
-    margin-top: 8px;
+    margin-top: 6px;
 }
 
 .related_photo_wrapper{
@@ -207,14 +246,341 @@ padding: 40px 170px;
 
 .single_related_photo_btn {
     justify-content: center;
-    margin-top: 80px;
+    margin-top: 70px;
+}
+
+.photo_block{
+    width: 49%;
+    
 }
 
 .single_related_photo{
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 10px;
 }
 .photo_block img{
     height: 550px;
+    width:100%;
+    margin-bottom: 20px !important;
     object-fit: cover;
 }
+
+@media (max-width: 959px){
+    .photo_block{
+        width: 49%;
+    }
+    .photo_block img{
+        height: 350px;
+       
+    }
+    .photo_contact_img{
+        width: 14% !important;
+    }
+    .photo_contact_button{
+        width: 86% !important;
+    }
+}
+
+@media (max-width: 622px){
+    .photo_block{
+        width: 100%;
+    }
+    
+    .photo_block img{
+        margin-bottom: 20px !important;
+    }
+   
+    .photo_contact_button{
+        margin-top: -35px;
+    }
+
+    .photo_contact_button .button{
+        margin: 10px 0 0 0px !important;
+    }
+
+    .photo_contact_wrapper{
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-bottom: 35px;
+    }
+
+    .photo_contact_img,
+    .photo_contact_button{
+        width: 100% !important;
+    }
+
+    .photo_contact_img  {
+        margin: 35px 0 -10px 0
+    }
+
+    .single_photo_next_img img{
+        float: left !important;    
+    }
+
+}
+
+@media (max-width: 500px){
+    .photo_header{
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        border-bottom: 1px solid black;
+        
+    }
+    .single_photo_content{
+        width: 100%;
+        margin-top: 50px;
+        border: none;
+    }
+    .single_photo_thumb{
+        width: 100%;
+        
+    }
+    .photo_contact_button{
+        margin-top: -20px;
+    }
+
+    .photo_contact_button .button{
+        margin: 10px 0 0 0px !important;
+    }
+}
+
+@media (max-width: 375px){
+    
+    .photo_header{
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        border-bottom: 1px solid black;
+        padding: 0% 10%;
+    }
+
+    .single_photo_content{
+        width: 100%;
+        margin-top: 50px;
+        border: none;
+    }
+
+    .single_photo_thumb{
+        width: 100%;
+        
+    }
+
+    .photo_header h1{
+        font-size: 46px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 48px;
+        letter-spacing: 0em;
+        text-align: left;
+        text-transform: uppercase;
+        margin-bottom: 45px;
+    }
+    .content-area{
+        padding: 0%;  
+    }
+
+    .photo_contact_wrapper,
+    .related_photo_wrapper{
+        padding: 8% 10%; 
+        background-color: #e5e5e5;
+    }
+
+    .photo_contact_img{
+        display: none;
+    }
+
+    .photo_contact_button .button{
+        margin: 20px 0 0 0 !important;
+    }
+
+    .photo_block img{     
+        height: 250px;
+    }
+
+    .single_related_photo_btn{
+        margin-top: 10px;
+    }
+
+}
+
+/* The Modal */
+.modal {
+    display: none; /*Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 999; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: hidden; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+}
+
+.modal_content {
+    background-color: #fefefe;
+    margin: 6% auto; /* 15% from the top and centered */
+    padding: 20px 0;
+    border: 5px solid black;
+    width: 35%; /* Could be more or less, depending on screen size */
+    height: 80%;
+    position: relative;
+    overflow-x: hidden;
+}
+  
+
+.close {
+    color: #c3c3c3;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+} 
+
+.modal_body{
+    display: flex;
+    justify-content: center;
+    position:relative;
+    top: 150px;
+    
+}
+
+
+.modal_header::before{
+  
+    content: url('partials/layouts/images/contact.png');
+    position: absolute;
+    right: -140px;
+    
+}
+.modal_header::after{
+  
+    content: url('partials/layouts/images/contact.png'); 
+    position: absolute;
+    top:80px;
+    right: -185px;
+   
+
+}
+
+.modal_body .everest-forms{
+    width: 50%;
+   
+}
+
+.modal_body > .everest-forms .evf-field-label{
+    margin-bottom: 0px !important;
+}
+
+.modal_body > .everest-forms .input-text{
+    border-radius: 0px;
+}
+
+.modal_body > .everest-forms .evf-submit-container {
+    display: flex  !important;
+    justify-content: center  !important;
+}
+
+button.everest-forms-submit-button{
+    font-family: 'Space Mono' !important;
+    color: black !important; 
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    line-height: 20px !important;
+    background-color: #fff !important;
+    padding: 10px 50px !important;
+    border-radius: 0px !important;
+    text-align: center !important;
+    border: none !important;
+    background: linear-gradient(to right, black 50%, white 50%) !important;
+    background-size: 200% 100% !important;
+    background-position: right bottom !important;
+    transition: all .5s ease-out !important;
+    border-left: 5px solid black !important;
+    margin-top: 20px;
+}
+
+button.everest-forms-submit-button:hover {
+    color: white !important;  
+    background-position: left bottom !important;
+}
+
+@media (max-width: 1414px){
+
+    .modal_content {
+        
+        margin: 8% auto;
+        padding: 20px 0;
+        width: 40%;
+        height: 85%;
+
+    }
+    .modal_body .everest-forms{
+        width: 60%;
+       
+    }
+
+
+}
+
+@media (max-width: 622px){
+
+    .modal_content {
+        
+        margin: 20% auto;
+        padding: 20px 0; 
+        width: 80%;
+        height: 80%;
+
+    }
+    .modal_body .everest-forms{
+        width: 70%;
+       
+    }
+
+}
+
+@media (max-width: 375px){
+
+    .modal_content {
+        
+        margin: 25% auto;
+        padding: 20px 0;
+        width: 100%;
+        height: 80%;
+
+    }
+
+    .modal_body .everest-forms{
+        width: 70%;
+       
+    }
+
+    .evf-submit-container {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    
+    button.everest-forms-submit-button{
+        width: 100% !important;
+    }
+
+}
+
+/*.modal_header{
+  
+    background-image: url('partials/layouts/images/contact.png');
+    background-repeat: repeat;
+    background-position: 50% 0%;
+    background-color: #fff;
+    width: 100%;
+    height: 97px;
+    position: relative;
+    
+}*/
