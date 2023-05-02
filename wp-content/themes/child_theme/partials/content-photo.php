@@ -15,8 +15,8 @@ var_dump($post_datas);*/
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
 	<div class="<?php Go\content_wrapper_class( 'content-area__wrapper' ); ?>">
-
-		<div class="content-area">
+	
+		<div class="content-area photo-content-area">
 
 		    <div class="photo_header flex_row">
 		        <div class="single_photo_content">
@@ -27,11 +27,13 @@ var_dump($post_datas);*/
 			        the_title( sprintf( '<h2 class="post__title entry-title m-0"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' );
 		            endif;
 		            ?>
-					<p>Référence : <?php echo mb_strtoupper($post_datas['metas']['reference'], 'UTF8'); ?></p>
-					<p>Catégorie : <?php echo mb_strtoupper($post_datas['taxonomies']['categorie'][0]->name, 'UTF8'); ?></p>
-					<p>FORMAT : <?php echo mb_strtoupper($post_datas['taxonomies']['format'][0]->name, 'UTF8'); ?></p>
-					<p>Type : <?php echo mb_strtoupper($post_datas['metas']['type'], 'UTF8'); ?></p>
-					<p>ANNÉE : 2021</p>
+					<p class="single_photo_ref" data-reference="<?php echo mb_strtoupper($post_datas['metas']['reference'], 'UTF8'); ?>">
+		                Référence : <?php echo mb_strtoupper($post_datas['metas']['reference'], 'UTF8'); ?>
+					</p>
+					<p class="single_photo_cat">Catégorie : <?php echo mb_strtoupper($post_datas['taxonomies']['categorie'][0]->name, 'UTF8'); ?></p>
+					<p class="single_photo_for">FORMAT : <?php echo mb_strtoupper($post_datas['taxonomies']['format'][0]->name, 'UTF8'); ?></p>
+					<p class="single_photo_type">Type : <?php echo mb_strtoupper($post_datas['metas']['type'], 'UTF8'); ?></p>
+					<p class="single_photo_date">ANNÉE : 2021</p>
                 </div>
 
                 <div class="single_photo_thumb">

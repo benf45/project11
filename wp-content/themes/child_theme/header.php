@@ -70,7 +70,18 @@ $header_flex_class = in_array( get_theme_mod( 'header_variation', \Go\Core\get_d
 
 				</div>
 
-				<?php Go\navigation_toggle(); ?>
+
+				<div class="header__nav-toggle">
+				    <button id="nav-toggle" class="nav-toggle" type="button" aria-controls="header__navigation" aria-expanded="false">
+			            <div class="nav-toggle-icon">
+			                <span class="dashicons dashicons-menu-alt3"></span>
+			            </div>
+			            <div class="nav-toggle-icon nav-toggle-icon--close">
+			                <span class="dashicons dashicons-no-alt"></span>
+			            </div>
+			            <span class="screen-reader-text">Menu</span>
+		            </button>
+	            </div>
 
 			</div>
 

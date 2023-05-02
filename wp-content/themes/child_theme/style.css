@@ -1,5 +1,5 @@
 /*
-Theme Name: nathalie mota
+Theme Name: NathalieMota
 Theme URI: https://openclassroorms.com/
 Author: Nathalie Mota
 Author URI: https://openclassrooms.com/
@@ -36,6 +36,263 @@ h6{
     display: flex;
     flex-direction: column;
 }
+
+.content-area{
+    padding: 2% 10% 0 10%;  
+}
+
+@media (max-width: 375px){
+
+    .content-area{
+        padding: 2% 10% 0 10% !important; 
+    }
+}
+
+/* Banner */
+.banner_section {
+    width: 100%;
+    height: 966px;
+    background-position: center center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.banner_content{
+    width: 100%;
+    justify-content: center;
+    
+}
+
+.banner_content h1{
+    margin: 25% auto;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 96px;
+    color: rgba(76, 175, 80, 0);
+    -webkit-text-stroke-width: 2px;
+    stroke-width: 1px;
+    -webkit-text-stroke-color: #FFF;
+    stroke: #FFF;
+}
+@media (max-width: 959px){
+    .banner_section {
+        height: 653px !important;
+        background-size: cover;
+    }
+    .banner_content h1{
+        margin: 28% auto;
+        font-size: 80px;
+        Line-height: 65px;
+        -webkit-text-stroke-width: 2px;
+    }
+}
+@media (max-width: 622px){
+    .banner_section {
+        height: 453px !important;
+        background-size: cover;
+    }
+    .banner_content h1{
+        margin: 30% auto;
+        font-size: 50px;
+        Line-height: 40px;
+        -webkit-text-stroke-width: 2px;
+    }
+}
+@media (max-width: 375px){
+    .banner_section {
+        height: 253px !important;
+        background-size: cover;
+    }
+    .banner_content h1{
+        margin: 28% auto;
+        font-size: 28px;
+        Line-height: 40px;
+        -webkit-text-stroke-width: 1px;
+    }
+}
+
+/* home */
+#photo_filter_form{
+   width: 100%;
+   justify-content: space-between;
+}
+
+div.filter_group_first{
+    display: inherit !important;
+    width: 80% !important;
+}
+
+div.filter_group_second{
+    width: 20% !important;
+}
+
+.filter_group_first_select{
+   margin-right: 20px;
+}
+
+.photo_section {
+    padding: 30px 0 0 0;
+}
+
+@media (max-width: 959px){
+    .photo_section {
+        padding: 0px 0 0 0;
+    }
+}
+
+@media (max-width: 375px){
+
+    .filter_section {
+        padding: 2% 10% 5% 10%  !important;
+    }
+
+    .photo_section {
+        padding: 2% 10% 5% 10%  !important;
+
+        background-color: #e5e5e5!important;
+    }
+
+    .home-content-area {
+        padding: 2% 0 0 0 !important;
+    }
+}
+
+
+/* Form */
+select {
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    width: 100% !important;
+    padding: 8px 10px !important;
+    border: 1px solid black;
+    background-image: url(./dist/images/arrow-down-solid.svg);
+    background-position: calc(100% - 10px);
+    background-repeat: no-repeat;
+}
+
+.filter_group_first_select{
+    width: 26% !important;
+}
+
+select option{
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+
+}
+
+select:focus {
+
+    border-color: black;
+   
+}
+
+select.active_select {
+    
+    background-image: url(./dist/images/arrow-up-solid.svg);
+    background-position: calc(100% - 10px);
+   
+}
+
+form label {
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase !important;
+}
+
+@media (max-width: 622px){
+
+    select {
+
+        width: 100% !important;
+
+    }
+    div.filter_group_first{
+        
+        width: 100% !important;
+    }
+    .filter_group_first_select{
+        width: 50% !important;
+      
+    }
+    
+    .filter_group_first select{
+        margin-bottom: 10px !important;
+    }
+    
+    .filter_group_first_select:last-child {
+
+        margin-right: 0px !important;
+    }
+
+
+    div.filter_group_second{
+        width: 100% !important;
+    }
+
+    #photo_filter_form{
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 375px){
+
+    select {
+
+        width: 100% !important;
+        
+    }
+
+    .filter_group_first select{
+        margin-bottom: 10px !important;
+    }
+
+    div.filter_group_first{
+        
+        width: 100% !important;
+    }
+
+    .filter_group_first_select{
+        width: 100% !important;
+        margin-right: 0px !important;
+    }
+
+    div.filter_group_second{
+        width: 100% !important;
+    }
+
+    #photo_filter_form{
+        display: inline !important;
+      
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Button link*/
 a.button{
@@ -82,7 +339,6 @@ button.button:hover {
 }
 
 
-
 /* Header */
 .header__inner{
 padding: 40px 170px;
@@ -106,7 +362,37 @@ padding: 40px 170px;
     font-weight: 700;
     text-decoration: none;
 }
+@media (max-width: 959px){
 
+    .header__inner {
+      padding: 10px 40px;
+      justify-content: flex-start;
+    }
+
+    .header__titles h1.custom-logo {
+
+        justify-content: flex-start;
+        
+    }
+
+    .nav-toggle-icon--close span{
+        font-size: 30px !important;
+        padding: 0px;
+        position: relative;
+        top: -5px;
+        left: -5px;
+    }
+    
+    
+}
+
+@media (max-width: 375px){
+
+    .header__titles .custom-logo {
+       width: 138px ;
+    }
+    
+}
 
 /* Footer */
 .site-footer{
@@ -155,9 +441,6 @@ padding: 40px 170px;
 }
 
 /*  Single photo */
-.content-area{
-  padding: 2% 10% 0 10%;  
-}
 
 .photo_header{
     justify-content: space-between;
@@ -375,8 +658,8 @@ padding: 40px 170px;
         text-transform: uppercase;
         margin-bottom: 45px;
     }
-    .content-area{
-        padding: 0%;  
+    .photo-content-area{
+        padding: 0% !important;  
     }
 
     .photo_contact_wrapper,
@@ -572,15 +855,3 @@ button.everest-forms-submit-button:hover {
     }
 
 }
-
-/*.modal_header{
-  
-    background-image: url('partials/layouts/images/contact.png');
-    background-repeat: repeat;
-    background-position: 50% 0%;
-    background-color: #fff;
-    width: 100%;
-    height: 97px;
-    position: relative;
-    
-}*/

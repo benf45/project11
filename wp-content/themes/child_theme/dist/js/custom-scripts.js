@@ -1,5 +1,6 @@
 (function($){
 
+
 // Get the modal
 var modal = $("#my_modal");
 
@@ -12,8 +13,30 @@ var modalCloseBtn = modal.find(".close");
 // When the user clicks on the button, open the modal
 modalOpenBtn.click(function(e) {
    e.stopPropagation();  
+
+    //Check if contact menu is clicked
+    if($(this).hasClass('menu_modal_open')){
+
+        //Empty the input when clicking on contact menu
+        modal.find('.input_reference input').val('');
+
+    }else{
+
+        //Get the ref of the image on single page
+        reference = $('.single_photo_ref').attr('data-reference');
+
+        if(reference){
+
+            //Add the  ref in the form's input
+            modal.find('.input_reference input').val(reference);
+           
+        }
+
+    }
+
    modal.css({'display': 'block'});
    modal.addClass('active_modal');
+
 });
 
 // When the user clicks on <span> (x), close the modal
@@ -31,6 +54,23 @@ $("#my_modal").click(function(ev){
     modal.removeClass('active_modal');
 
 });
+
+
+/* Change arrow on select */
+$("select").click(function(){
+
+    if($(this).hasClass('active_select')){
+
+        $(this).removeClass('active_select');
+    }
+    else{
+
+        $(this).addClass('active_select');
+    }
+
+});
+
+
 
 
 })( jQuery );
