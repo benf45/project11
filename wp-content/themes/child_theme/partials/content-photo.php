@@ -8,10 +8,7 @@
  */
 
 ?>
-<?php
-/*$post_datas = get_query_var( 'post_datas' );
-var_dump($post_datas);*/
-?>
+
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
 	<div class="<?php Go\content_wrapper_class( 'content-area__wrapper' ); ?>">
@@ -108,7 +105,7 @@ var_dump($post_datas);*/
 	            
 				?>
 
-				<div class="single_related_photo flex_row">
+				<div class="photo_box_wrapper flex_row">
                 <?php
 				while ( $related_photo->have_posts() ) { 
 					$related_photo->the_post();

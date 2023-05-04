@@ -179,7 +179,7 @@ foreach ( $post_types as $key => $post_type ) {
 
                 ?>
 
-                    <div class="single_related_photo flex_row">
+                    <div class="photo_box_wrapper flex_row">
                 <?php
                     while ( $all_photos->have_posts() ) { 
                         $all_photos->the_post();
@@ -195,6 +195,12 @@ foreach ( $post_types as $key => $post_type ) {
                     wp_reset_query();
 
                 ?>
+
+                </div>
+
+                <div class="photo_content_btn flex_row">
+
+                    <button class="load_more_btn">Charger plus</button>
 
                 </div>
 

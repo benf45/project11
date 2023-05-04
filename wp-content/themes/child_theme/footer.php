@@ -11,6 +11,7 @@
 
 	<?php
     get_template_part( 'partials/modal' );
+	get_template_part( 'partials/lightbox' );
 	?>
 
 	<?php Go\footer_variation(); ?>
