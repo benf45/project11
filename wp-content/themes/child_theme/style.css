@@ -371,7 +371,13 @@ button.load_more_btn:hover {
 
 /* Header */
 .header__inner{
-padding: 40px 170px;
+padding: 40px 0px;
+width: 50%;
+}
+
+.header__titles {
+    padding-left: 20%;
+    z-index: 1;
 }
 
 .site-header {
@@ -379,12 +385,13 @@ padding: 40px 170px;
 }
 
 .header__navigation{
-    margin: -15px 0 -15px 0 !important;
+    margin: 0px 0 -15px 0 !important;
     position: absolute;
     width: 100vw;
-    height: 100vh;
-    top: -30px;
-    left: -40px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding-top: 25px;
 }
 
 .header__navigation-inner{
@@ -422,15 +429,27 @@ padding: 40px 170px;
     }
 
     .header__inner {
-        padding: 10px 40px;
+        padding: 2% 10% 2% 10%;
         justify-content: flex-start;
+        width: 100%;
     }
 
+    .header__titles {
+        padding-left: 0%;
+
+    } 
   
     .header__navigation{
-        margin: 68px 0 -10px 0 !important;
+        margin: 42px 0 -10px 0 !important;
         padding-top: 110px !important;
         background-color: #e00000 !important;
+        height: 100vh !important;
+        left: -13.9% !important;
+    }
+
+    .header__nav-toggle{
+        flex: 0 0 9.9% !important;
+        text-align: right !important;
     }
 
     .header__title-nav{
@@ -474,16 +493,24 @@ padding: 40px 170px;
 @media (max-width: 782px){
 
     .header__navigation{
-        margin: 67px 0 -10px 0 !important;
-        background-color: #e00000 !important;
+        margin: 38px 0 -10px 0 !important;
     }
 
 }
 
 @media (max-width: 375px){
 
+    .header__navigation{
+        margin: 32px 0 -10px 0 !important;
+    }
+
     .header__titles .custom-logo {
        width: 138px ;
+    }
+
+    .header__inner {
+        padding: 2% 10% 2% 10%;
+        
     }
     
 }
