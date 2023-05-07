@@ -126,27 +126,40 @@ function openLightbox(){
     var lightbox = $(".lightbox");
 
     // Get the button that opens the lightbox modal
-    var lightboxOpenBtn = $(".lightbox_open img");
+    var lightboxOpenBtn = $(".lightbox_open img");;
 
     lightboxOpenBtn.on('click', function(e) {
 
-        //We get the image path
-        let imagePath = $(this).closest('.show_lightbox_icon').attr('data-image-path');
-    
-        // We show the imafe in the lightbox
-        lightbox.find('.lightbox_content img').attr('src', imagePath);
+        // Get the data of post id
+        let dataImagePath = $(this).closest('.show_lightbox_icon').attr('data-image-path');    
+        let postId = $(this).closest('.show_lightbox_icon').attr('data-post-id');
+        let postTitle = $(this).closest('.show_lightbox_icon').attr('data-post-title');
+        let postTaxonomyTerm = $(this).closest('.show_lightbox_icon').attr('data-post-term');
+        let postDate = $(this).closest('.show_lightbox_icon').attr('data-post-date');
+
+        //Add post data to the lightbox modal
+        $('.lightbox').attr({'data-post-id': postId, 'data-post-title': postTitle, 'data-post-date': postDate});
+
+        // We show the post data in the lightbox
+        lightbox.find('.lightbox_content_image').prepend('<img src="'+dataImagePath+'" alt="'+postTitle+'">');
+
+        lightbox.find('.lightbox_content_image_infos').html('<p>'+postTitle+'</p>'+
+                                                            '<span>'+postTaxonomyTerm+' </span>'+ 
+                                                            '<span> '+postDate+'</span>');
+      
     
        //Show the lightbox modal
        lightbox.fadeIn(250);
        lightbox.addClass('active_modal');
     
     });
+
 }
 openLightbox();
 
 
 let currentPage = 1;
-let limit = 8;
+let limit = 12;
 
 /* Function ajax to load more photos */
 function ajaxRequest(data){
@@ -177,20 +190,7 @@ function ajaxRequest(data){
                 redirectSinglePage();
                 // Function to open lightbox when the user clicks on the button
                 openLightbox();
-                       //Show the lightbox modal
-                       /*$(".lightbox_open img").click(function(e) {
-
-                        //We get the image path
-                        let imagePath = $(this).closest('.show_lightbox_icon').attr('data-image-path');
-                    
-                        // We show the imafe in the lightbox
-                        $(".lightbox").find('.lightbox_content img').attr('src', imagePath);
-                    
-                       //Show the lightbox modal
-                       $(".lightbox").fadeIn(250);
-                       $(".lightbox").addClass('active_modal');
-                    
-                    });*/
+                      
             }
 
             if(data.action == 'loadMore' && response.html == ''){

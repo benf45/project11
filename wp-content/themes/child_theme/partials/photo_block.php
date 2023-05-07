@@ -28,7 +28,11 @@ $image_title = get_the_title($image_id);
             <img src="<?php echo get_stylesheet_directory_uri() ;?>/dist/images/eye.svg" alt="Oeil">
         </div>
 
-        <div class="show_lightbox_icon lightbox_open" data-image-path="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>">
+        <div class="show_lightbox_icon lightbox_open" data-post-title="<?php echo $image_title; ?>" 
+                                                      data-post-date="<?php echo get_the_date('Y'); ?>" 
+                                                      data-post-id="<?php echo get_the_ID(); ?>" 
+                                                      data-post-term="<?php if($terms_post){ echo $terms_post[0]->name;} ?>" 
+                                                      data-image-path="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>">
                 
             <img src="<?php echo get_stylesheet_directory_uri() ;?>/dist/images/fullscreen.svg" alt="Plein écran">
                 

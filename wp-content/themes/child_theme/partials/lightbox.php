@@ -15,7 +15,28 @@
     <!-- Modal content -->
     <div class="lightbox_content flex_row">
 
-        <img src="" alt="dbz">
+        <span class="lightbox_left_arrow" data-user-action="prev">
+			<img src="<?php echo get_stylesheet_directory_uri().'/partials/layouts/images/arrow_left.png';?>" alt="Fléche gauche">
+		</span>
+
+        <div class="lightbox_content_img_wrapper">
+
+            <div class="lightbox_content_image">
+                <!-- The image will be placed here -->
+
+                <div class="lightbox_image_loading"></div>
+                
+            </div>
+
+            <div class="lightbox_content_image_infos">
+                <!-- The image infos will be placed here -->
+            </div>
+
+        </div>
+
+        <span class="lightbox_right_arrow" data-user-action="next">
+			<img src="<?php echo get_stylesheet_directory_uri().'/partials/layouts/images/arrow_right.png';?>" alt="Fléche droite">
+		</span>
         
     </div>
 

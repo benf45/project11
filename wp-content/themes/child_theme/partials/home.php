@@ -169,7 +169,7 @@ foreach ( $post_types as $key => $post_type ) {
                 <?php
 
                     $args = array('post_type' => 'photo',
-                                  'posts_per_page' => '8',
+                                  'posts_per_page' => '12',
                                   'orderby' => 'date',
                                   'order' => 'DESC');
                     $all_photos = new wp_query($args);

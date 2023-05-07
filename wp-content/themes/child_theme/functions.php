@@ -158,3 +158,67 @@ function load_more(){
 }
 add_action( 'wp_ajax_load_more', 'load_more' );
 add_action('wp_ajax_nopriv_load_more', 'load_more');
+
+
+/*
+** Function to change lightbox photo
+*/
+function change_lightbox_photo(){
+
+    $post_data = $_POST['data'];
+
+    $post_id = $post_data['post-id'];
+    $user_action = $post_data['user-action'];
+
+    
+    global $post;
+    $post = get_post($post_id);
+
+    $get_post = '';
+
+    if($user_action == "prev"){
+
+        $get_post = get_previous_post();
+
+    }else{
+
+        $get_post = get_next_post();
+
+    }
+    
+    if($get_post){
+       
+        //Get all terms of a taxonomy
+        $terms = get_the_terms($get_post->ID, 'categorie');
+        
+        $data['id'] = $get_post->ID;
+        $data['title'] = $get_post->post_title;
+        $data['date'] = date('Y', strtotime($get_post->post_date));
+        $data['image_url'] = get_the_post_thumbnail_url($get_post->ID);
+
+        //Check if terms of a taxonomy is empty
+        if($terms){
+
+            $data['term'] = $terms[0];
+
+        }
+
+        $code = "success";
+
+    }else{
+
+        $data[] = '';
+        $code = "error";
+
+    }
+    
+    $result = array('message' => $code,
+                    'data' => $data);
+
+    echo json_encode($result);
+
+    wp_die();
+
+}
+add_action( 'wp_ajax_change_lightbox_photo', 'change_lightbox_photo' );
+add_action('wp_ajax_nopriv_change_lightbox_photo', 'change_lightbox_photo');
