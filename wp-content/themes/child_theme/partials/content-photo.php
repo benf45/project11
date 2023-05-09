@@ -30,7 +30,7 @@
 					<p class="single_photo_cat">Catégorie : <?php echo mb_strtoupper($post_datas['taxonomies']['categorie'][0]->name, 'UTF8'); ?></p>
 					<p class="single_photo_for">FORMAT : <?php echo mb_strtoupper($post_datas['taxonomies']['format'][0]->name, 'UTF8'); ?></p>
 					<p class="single_photo_type">Type : <?php echo mb_strtoupper($post_datas['metas']['type'], 'UTF8'); ?></p>
-					<p class="single_photo_date">ANNÉE : 2021</p>
+					<p class="single_photo_date">ANNÉE : <?php echo the_date('Y'); ?></p>
                 </div>
 
                 <div class="single_photo_thumb">
