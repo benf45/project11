@@ -40,6 +40,6 @@
         
     </div>
 
-    <span class="lightbox_close_icon dashicons dashicons-no-alt"></span>
+    <span class="modal_close_icon dashicons dashicons-no-alt"></span>
 
 </div>

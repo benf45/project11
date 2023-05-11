@@ -17,7 +17,7 @@
 
         <!-- Modal header -->
         <div class="modal_header">
-            <span class="close">&times;</span>
+            <!-- The background image will be displayed here -->
         </div>
         
         <!-- Modal header -->
@@ -27,5 +27,7 @@
         
 
     </div>
+
+    <span class="modal_close_icon dashicons dashicons-no-alt"></span>
 
 </div>

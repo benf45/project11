@@ -920,7 +920,7 @@ width: 50%;
 
     justify-content: center;
     align-items: center;
-    margin: 2% auto; /* 1% from the top and centered */
+    margin: 2% auto; /* 2% from the top and centered */
     width: 45%; /* Could be more or less, depending on screen size */
     height: 100vh;
     position: relative;
@@ -1016,7 +1016,7 @@ width: 50%;
 
 }
 
-.lightbox_close_icon{
+.modal_close_icon{
     position: absolute;
     top: 60px;
     right: 50px;
@@ -1025,13 +1025,20 @@ width: 50%;
     transition: transform .1s;
 }
 
-.lightbox_close_icon:hover{
+.modal_close_icon:hover{
     cursor: pointer;
     text-shadow: 2px 2px 14px #fff;
     -ms-transform: scale(1.2); /* IE 9 */
     -webkit-transform: scale(1.2); /* Safari 3-8 */
     transform: scale(1.2);
 }
+
+.lightbox_arrow_disabled{
+    opacity: 0.4; 
+    pointer-events: none;
+    cursor: default;
+}
+
 
 @media (max-width: 959px){
    
@@ -1059,10 +1066,14 @@ width: 50%;
     }
 }
 
-.lightbox_arrow_disabled{
-    opacity: 0.4; 
-    pointer-events: none;
-    cursor: default;
+@media (max-width: 622px){
+
+    .modal_close_icon{
+        
+        right: 10%;
+   
+    }
+
 }
 
 @media (max-width: 375px){
@@ -1089,7 +1100,15 @@ width: 50%;
         width: 15% !important;
     
     }
+
+    .modal_close_icon{
+        
+        right: 3% !important;
+   
+    }
+
 }
+
 
 /* The Modal */
 .modal {
@@ -1107,7 +1126,7 @@ width: 50%;
 
 .modal_content {
     background-color: #fefefe;
-    margin: 6% auto; /* 15% from the top and centered */
+    margin: 9% auto; /* 9% from the top and centered */
     padding: 20px 0;
     border: 5px solid black;
     width: 35%; /* Could be more or less, depending on screen size */
@@ -1214,6 +1233,16 @@ button.everest-forms-submit-button:hover {
        
     }
 
+}
+
+@media (max-width: 959px){
+ 
+    .modal_content {
+       
+        margin: 12% auto; /* 12% from the top and centered */
+        width: 55% !important; /* Could be more or less, depending on screen size */
+      
+    }
 
 }
 
@@ -1221,12 +1250,13 @@ button.everest-forms-submit-button:hover {
 
     .modal_content {
         
-        margin: 20% auto;
+        margin: 30% auto;
         padding: 20px 0; 
-        width: 80%;
+        width: 80% !important;
         height: 80%;
 
     }
+
     .modal_body .everest-forms{
         width: 70%;
        
@@ -1238,10 +1268,9 @@ button.everest-forms-submit-button:hover {
 
     .modal_content {
         
-        margin: 25% auto;
+        margin: 35% auto;
         padding: 20px 0;
-        width: 100%;
-        height: 80%;
+        width: 100% !important;
 
     }
 

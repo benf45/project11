@@ -4,7 +4,7 @@
 var lightbox = $(".lightbox");
 
 // Get the <span> element that closes the modal
-var lightboxCloseBtn = lightbox.find(".lightbox_close_icon");
+var lightboxCloseBtn = lightbox.find(".modal_close_icon");
 
 
 //function to close the lightbox modal

@@ -9,7 +9,7 @@ var modal = $("#my_modal");
 var modalOpenBtn = $(".modal_open");
 
 // Get the <span> element that closes the modal
-var modalCloseBtn = modal.find(".close");
+var modalCloseBtn = modal.find(".modal_close_icon");
 
 // When the user clicks on the button, open the modal
 function openModal(){
@@ -47,17 +47,23 @@ openModal();
 //Function to close the modal
 function closeModal(){
 
-    modalCloseBtn.click(function() {
-        modal.css({'display': 'none'});
+    //When the user clicks on close icon of the modal, close it
+    modalCloseBtn.on('click',function() {
+
+        //Hide the modal when close button is clicked
+        modal.hide();
         modal.removeClass('active_modal');
+
+
     });
+
       
     // When the user clicks anywhere outside of the modal, close it
     $("#my_modal").click(function(ev){
       
         if(ev.target != this && modal.hasClass('active_modal')) return;
       
-        modal.css({'display': 'none'});
+        modal.hide();
         modal.removeClass('active_modal');
       
     });

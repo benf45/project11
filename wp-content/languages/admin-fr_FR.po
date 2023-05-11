@@ -14117,6 +14117,11 @@ msgstr "Mettre ce contenu en avant"
 msgid "Not Sticky"
 msgstr "Pas mis en avant"
 
+#: wp-admin/includes/class-wp-posts-list-table.php:1959
+#: wp-admin/includes/class-wp-posts-list-table.php:1962
+msgid "Sticky"
+msgstr "Mis en avant"
+
 #: wp-admin/includes/class-wp-posts-list-table.php:1921
 msgid "Allow Pings"
 msgstr "Autoriser les notifications par ping"
