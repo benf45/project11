@@ -178,6 +178,7 @@ function ajaxRequest(data){
         dataType: 'json',
         success: function(response){
 
+            //If the html is not empty we show more messages or we show a completely new data depending on filter
             if(response.html != ''){
 
                 if(data.action == 'loadMore'){
@@ -197,15 +198,27 @@ function ajaxRequest(data){
                 // Function to open lightbox when the user clicks on the button
                 openLightbox();
                       
+            }else{ //Do this when user has changed the filter
+
+                //Show a message when no data to show
+                if(data.action == 'onChange'){
+
+                    $('.photo_box_wrapper').html('<p class="no_photo_data">Aucune photo à afficher</p>');
+
+                }
+
+                //If the html is empty we disable the show more button
+                if(response.html == ''){
+
+                    //disable load more button
+                    disableLoadMoreButton();
+                    //change the text of load more button when there are no data
+                    changeLoadMoreButtontxt('Plus de données');
+
+                }
+
             }
 
-            if(data.action == 'loadMore' && response.html == ''){
-                //disable load more button
-                disableLoadMoreButton();
-                //change the text of load more button when there are no data
-                changeLoadMoreButtontxt('Plus de données');
-
-            }
 
         }
 

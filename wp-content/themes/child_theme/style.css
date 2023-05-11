@@ -138,6 +138,12 @@ div.filter_group_second{
     justify-content: center;
 }
 
+.no_photo_data{
+    padding-bottom: 40px;
+    width:100%;
+    text-align: center;
+}
+
 @media (max-width: 959px){
     .photo_section {
         padding: 0px 0 0 0;
