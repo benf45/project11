@@ -197,6 +197,11 @@ function ajaxRequest(data){
                 redirectSinglePage();
                 // Function to open lightbox when the user clicks on the button
                 openLightbox();
+
+                //Activate load more button
+                activateLoadMoreButton();
+                //change the text of load more button when select change state
+                changeLoadMoreButtontxt('Charger plus');
                       
             }else{ //Do this when user has changed the filter
 
@@ -253,16 +258,11 @@ function loadMore(){
     
     ajaxRequest(data);
 
-
 }
+
 
 /* Function to load photos on select change */
 function changeState(){
-
-    //Activate load more button
-    activateLoadMoreButton();
-    //change the text of load more button when select change state
-    changeLoadMoreButtontxt('Charger plus');
     
     // Do currentPage 1, because we want to show the first page
     currentPage = 1;
