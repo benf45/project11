@@ -16,9 +16,6 @@ function closeLightbox(){
         lightbox.hide();
         lightbox.removeClass('active_lightbox');
 
-        // Wen a user click on close button we remove the image from the dom
-        lightbox.find('.lightbox_content_image img').remove();
-
         //We resetting the left/right lightbox arrow for the next opening of the lightbox modal
         $('.lightbox_left_arrow, .lightbox_right_arrow').removeClass('lightbox_arrow_disabled');
 

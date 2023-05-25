@@ -22,6 +22,7 @@
         <div class="lightbox_content_img_wrapper">
 
             <div class="lightbox_content_image">
+
                 <!-- The image will be placed here -->
 
                 <div class="lightbox_image_loading"></div>
@@ -29,7 +30,9 @@
             </div>
 
             <div class="lightbox_content_image_infos">
+
                 <!-- The image infos will be placed here -->
+                
             </div>
 
         </div>

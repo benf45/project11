@@ -996,7 +996,7 @@ width: 50%;
 .lightbox_content_image_infos span{
 
     margin-bottom: -5px;
-    color: #000;
+    color: #f1f1f1;
 
 }
 
@@ -1004,7 +1004,7 @@ width: 50%;
 
     font-family: 'Space Mono';
     font-style: italic;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 20px;
     line-height: 24px;
     text-transform: uppercase;

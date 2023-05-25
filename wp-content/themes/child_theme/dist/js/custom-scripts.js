@@ -146,6 +146,9 @@ function openLightbox(){
         //Add post data to the lightbox modal
         $('.lightbox').attr({'data-post-id': postId, 'data-post-title': postTitle, 'data-post-date': postDate});
 
+        // Wen a user click on show lightbox button we remove the image from the dom
+        lightbox.find('.lightbox_content_image img').remove();
+
         // We show the post data in the lightbox
         lightbox.find('.lightbox_content_image').prepend('<img src="'+dataImagePath+'" alt="'+postTitle+'">');
 

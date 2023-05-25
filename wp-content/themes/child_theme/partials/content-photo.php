@@ -73,11 +73,11 @@
 					<div class="single_photo_next_nav">
 
 				        <span class="photo_next_arrow_left">   
-						    <?php echo previous_post_link('%link', '<img src="'.get_stylesheet_directory_uri().'/partials/layouts/images/arrow_left.png" alt="Fléche gauche">');?>
+						    <?php echo previous_post_link('%link', '<img src="'.get_stylesheet_directory_uri().'/partials/layouts/images/arrow_left1.png" alt="Fléche gauche">');?>
 						</span>
 
 				        <span class="photo_next_arrow_right">
-							<?php echo next_post_link('%link', '<img src="'.get_stylesheet_directory_uri().'/partials/layouts/images/arrow_right.png" alt="Fléche droite">');?>
+							<?php echo next_post_link('%link', '<img src="'.get_stylesheet_directory_uri().'/partials/layouts/images/arrow_right1.png" alt="Fléche droite">');?>
 						</span>
 
 				    </div>
