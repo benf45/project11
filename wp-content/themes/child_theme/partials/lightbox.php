@@ -16,7 +16,7 @@
     <div class="lightbox_content flex_row">
 
         <span class="lightbox_left_arrow" data-user-action="prev">
-			<img src="<?php echo get_stylesheet_directory_uri().'/partials/layouts/images/arrow_left.png';?>" alt="Fléche gauche">
+			<img src="<?php echo get_stylesheet_directory_uri().'/partials/layouts/images/arrow_leftw.png';?>" alt="Fléche gauche">
 		</span>
 
         <div class="lightbox_content_img_wrapper">
@@ -38,7 +38,7 @@
         </div>
 
         <span class="lightbox_right_arrow" data-user-action="next">
-			<img src="<?php echo get_stylesheet_directory_uri().'/partials/layouts/images/arrow_right.png';?>" alt="Fléche droite">
+			<img src="<?php echo get_stylesheet_directory_uri().'/partials/layouts/images/arrow_rightw.png';?>" alt="Fléche droite">
 		</span>
         
     </div>
