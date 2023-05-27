@@ -1,0 +1,137 @@
+[26-May-2023 20:32:36 UTC] PHP Warning:  require_once(C:\xampp\htdocs\project11/wp-content/themes/mytheme/class-wp-bootstrap-navwalker.php): failed to open stream: No such file or directory in C:\xampp\htdocs\project11\wp-content\themes\mytheme\functions.php on line 30
+[26-May-2023 20:32:36 UTC] PHP Fatal error:  require_once(): Failed opening required 'C:\xampp\htdocs\project11/wp-content/themes/mytheme/class-wp-bootstrap-navwalker.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\project11\wp-content\themes\mytheme\functions.php on line 30
+[26-May-2023 20:32:36 UTC] PHP Notice:  Trying to access array offset on value of type bool in C:\xampp\htdocs\project11\wp-includes\class-wp-recovery-mode-email-service.php on line 367
+[26-May-2023 20:32:36 UTC] PHP Notice:  Trying to access array offset on value of type bool in C:\xampp\htdocs\project11\wp-includes\class-wp-recovery-mode-email-service.php on line 368
+[26-May-2023 20:43:43 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Go\Core\get_default_header_variation() in C:\xampp\htdocs\project11\wp-content\themes\mytheme\header.php:12
+Stack trace:
+#0 C:\xampp\htdocs\project11\wp-includes\template.php(783): require_once()
+#1 C:\xampp\htdocs\project11\wp-includes\template.php(718): load_template('C:\\xampp\\htdocs...', true, Array)
+#2 C:\xampp\htdocs\project11\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\xampp\htdocs\project11\wp-content\themes\mytheme\index.php(15): get_header()
+#4 C:\xampp\htdocs\project11\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\project11\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\project11\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\project11\wp-content\themes\mytheme\header.php on line 12
+[26-May-2023 20:44:42 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Go\has_header_background() in C:\xampp\htdocs\project11\wp-content\themes\mytheme\header.php:30
+Stack trace:
+#0 C:\xampp\htdocs\project11\wp-includes\template.php(783): require_once()
+#1 C:\xampp\htdocs\project11\wp-includes\template.php(718): load_template('C:\\xampp\\htdocs...', true, Array)
+#2 C:\xampp\htdocs\project11\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\xampp\htdocs\project11\wp-content\themes\mytheme\index.php(15): get_header()
+#4 C:\xampp\htdocs\project11\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\project11\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\project11\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\project11\wp-content\themes\mytheme\header.php on line 30
+[26-May-2023 20:45:31 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Bootstrap_Navwalker' not found in C:\xampp\htdocs\project11\wp-content\themes\mytheme\header.php:64
+Stack trace:
+#0 C:\xampp\htdocs\project11\wp-includes\template.php(783): require_once()
+#1 C:\xampp\htdocs\project11\wp-includes\template.php(718): load_template('C:\\xampp\\htdocs...', true, Array)
+#2 C:\xampp\htdocs\project11\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\xampp\htdocs\project11\wp-content\themes\mytheme\index.php(15): get_header()
+#4 C:\xampp\htdocs\project11\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\project11\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\project11\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\project11\wp-content\themes\mytheme\header.php on line 64
+[26-May-2023 20:45:48 UTC] PHP Fatal error:  Uncaught Error: Class 'WP_Bootstrap_Navwalker' not found in C:\xampp\htdocs\project11\wp-content\themes\mytheme\header.php:64
+Stack trace:
+#0 C:\xampp\htdocs\project11\wp-includes\template.php(783): require_once()
+#1 C:\xampp\htdocs\project11\wp-includes\template.php(718): load_template('C:\\xampp\\htdocs...', true, Array)
+#2 C:\xampp\htdocs\project11\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\xampp\htdocs\project11\wp-content\themes\mytheme\index.php(15): get_header()
+#4 C:\xampp\htdocs\project11\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\project11\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\project11\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\project11\wp-content\themes\mytheme\header.php on line 64
+[26-May-2023 20:46:58 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Go\page_title() in C:\xampp\htdocs\project11\wp-content\themes\mytheme\index.php:17
+Stack trace:
+#0 C:\xampp\htdocs\project11\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\project11\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\project11\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\project11\wp-content\themes\mytheme\index.php on line 17
+[26-May-2023 20:47:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Go\content_wrapper_class() in C:\xampp\htdocs\project11\wp-content\themes\mytheme\partials\home.php:80
+Stack trace:
+#0 C:\xampp\htdocs\project11\wp-includes\template.php(785): require()
+#1 C:\xampp\htdocs\project11\wp-includes\template.php(718): load_template('C:\\xampp\\htdocs...', false, Array)
+#2 C:\xampp\htdocs\project11\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 C:\xampp\htdocs\project11\wp-content\themes\mytheme\index.php(24): get_template_part('partials/home')
+#4 C:\xampp\htdocs\project11\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\project11\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\project11\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\project11\wp-content\themes\mytheme\partials\home.php on line 80
+[26-May-2023 20:47:31 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Go\content_wrapper_class() in C:\xampp\htdocs\project11\wp-content\themes\mytheme\partials\home.php:80
+Stack trace:
+#0 C:\xampp\htdocs\project11\wp-includes\template.php(785): require()
+#1 C:\xampp\htdocs\project11\wp-includes\template.php(718): load_template('C:\\xampp\\htdocs...', false, Array)
+#2 C:\xampp\htdocs\project11\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 C:\xampp\htdocs\project11\wp-content\themes\mytheme\index.php(24): get_template_part('partials/home')
+#4 C:\xampp\htdocs\project11\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\project11\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\project11\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\project11\wp-content\themes\mytheme\partials\home.php on line 80
+[26-May-2023 20:48:44 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Go\footer_variation() in C:\xampp\htdocs\project11\wp-content\themes\mytheme\footer.php:17
+Stack trace:
+#0 C:\xampp\htdocs\project11\wp-includes\template.php(783): require_once()
+#1 C:\xampp\htdocs\project11\wp-includes\template.php(718): load_template('C:\\xampp\\htdocs...', true, Array)
+#2 C:\xampp\htdocs\project11\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#3 C:\xampp\htdocs\project11\wp-content\themes\mytheme\index.php(36): get_footer()
+#4 C:\xampp\htdocs\project11\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\project11\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\project11\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\project11\wp-content\themes\mytheme\footer.php on line 17
+[26-May-2023 20:52:25 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Go\content_wrapper_class() in C:\xampp\htdocs\project11\wp-content\themes\mytheme\partials\content-photo.php:14
+Stack trace:
+#0 C:\xampp\htdocs\project11\wp-includes\template.php(785): require()
+#1 C:\xampp\htdocs\project11\wp-includes\template.php(718): load_template('C:\\xampp\\htdocs...', false, Array)
+#2 C:\xampp\htdocs\project11\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 C:\xampp\htdocs\project11\wp-content\themes\mytheme\single-photo.php(21): get_template_part('partials/conten...')
+#4 C:\xampp\htdocs\project11\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\project11\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\project11\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\project11\wp-content\themes\mytheme\partials\content-photo.php on line 14
+[26-May-2023 21:14:05 UTC] PHP Deprecated:  Le fichier Thème sans comments.php est <strong>obsolète</strong> depuis la version 3.0.0, aucune alternative n’est disponible. Veuillez inclure un modèle de comments.php à votre thème. in C:\xampp\htdocs\project11\wp-includes\functions.php on line 5613
+[26-May-2023 21:15:46 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Go\post_meta() in C:\xampp\htdocs\project11\wp-content\themes\mytheme\partials\content.php:29
+Stack trace:
+#0 C:\xampp\htdocs\project11\wp-includes\template.php(785): require()
+#1 C:\xampp\htdocs\project11\wp-includes\template.php(718): load_template('C:\\xampp\\htdocs...', false, Array)
+#2 C:\xampp\htdocs\project11\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 C:\xampp\htdocs\project11\wp-content\themes\mytheme\single.php(14): get_template_part('partials/conten...')
+#4 C:\xampp\htdocs\project11\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\project11\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\project11\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\project11\wp-content\themes\mytheme\partials\content.php on line 29
+[26-May-2023 21:17:00 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Go\post_meta() in C:\xampp\htdocs\project11\wp-content\themes\mytheme\partials\content.php:54
+Stack trace:
+#0 C:\xampp\htdocs\project11\wp-includes\template.php(785): require()
+#1 C:\xampp\htdocs\project11\wp-includes\template.php(718): load_template('C:\\xampp\\htdocs...', false, Array)
+#2 C:\xampp\htdocs\project11\wp-includes\general-template.php(204): locate_template(Array, true, false, Array)
+#3 C:\xampp\htdocs\project11\wp-content\themes\mytheme\single.php(14): get_template_part('partials/conten...')
+#4 C:\xampp\htdocs\project11\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\project11\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\project11\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\project11\wp-content\themes\mytheme\partials\content.php on line 54
+[26-May-2023 21:17:27 UTC] PHP Deprecated:  Le fichier Thème sans comments.php est <strong>obsolète</strong> depuis la version 3.0.0, aucune alternative n’est disponible. Veuillez inclure un modèle de comments.php à votre thème. in C:\xampp\htdocs\project11\wp-includes\functions.php on line 5613
+[26-May-2023 21:18:02 UTC] PHP Deprecated:  Le fichier Thème sans comments.php est <strong>obsolète</strong> depuis la version 3.0.0, aucune alternative n’est disponible. Veuillez inclure un modèle de comments.php à votre thème. in C:\xampp\htdocs\project11\wp-includes\functions.php on line 5613
+[26-May-2023 21:18:51 UTC] PHP Warning:  call_user_func() expects parameter 1 to be a valid callback, function 'go_comment' not found or invalid function name in C:\xampp\htdocs\project11\wp-includes\class-walker-comment.php on line 184
+[26-May-2023 21:20:00 UTC] PHP Warning:  call_user_func() expects parameter 1 to be a valid callback, function 'go_comment' not found or invalid function name in C:\xampp\htdocs\project11\wp-includes\class-walker-comment.php on line 184
+[26-May-2023 21:22:44 UTC] PHP Warning:  call_user_func() expects parameter 1 to be a valid callback, function 'go_comment' not found or invalid function name in C:\xampp\htdocs\project11\wp-includes\class-walker-comment.php on line 184
+[26-May-2023 21:22:48 UTC] PHP Warning:  call_user_func() expects parameter 1 to be a valid callback, function 'go_comment' not found or invalid function name in C:\xampp\htdocs\project11\wp-includes\class-walker-comment.php on line 184
+[26-May-2023 21:23:17 UTC] PHP Warning:  call_user_func() expects parameter 1 to be a valid callback, function 'go_comment' not found or invalid function name in C:\xampp\htdocs\project11\wp-includes\class-walker-comment.php on line 184
+[26-May-2023 21:24:29 UTC] PHP Warning:  call_user_func() expects parameter 1 to be a valid callback, function 'go_comment' not found or invalid function name in C:\xampp\htdocs\project11\wp-includes\class-walker-comment.php on line 184
+[27-May-2023 00:40:52 UTC] PHP Notice:  Trying to get property 'title' of non-object in C:\xampp\htdocs\project11\wp-includes\class-wp-customize-widgets.php on line 905
+[27-May-2023 10:31:34 UTC] PHP Notice:  Undefined variable: image_title in C:\xampp\htdocs\project11\wp-content\themes\mytheme\partials\content-photo.php on line 48
+[27-May-2023 10:31:34 UTC] PHP Notice:  Undefined variable: terms_post in C:\xampp\htdocs\project11\wp-content\themes\mytheme\partials\content-photo.php on line 51
+[27-May-2023 10:31:34 UTC] PHP Notice:  Undefined variable: terms_post in C:\xampp\htdocs\project11\wp-content\themes\mytheme\partials\content-photo.php on line 60
+[27-May-2023 10:31:46 UTC] PHP Notice:  Undefined variable: image_title in C:\xampp\htdocs\project11\wp-content\themes\mytheme\partials\content-photo.php on line 48
+[27-May-2023 10:31:46 UTC] PHP Notice:  Undefined variable: terms_post in C:\xampp\htdocs\project11\wp-content\themes\mytheme\partials\content-photo.php on line 51
+[27-May-2023 10:31:46 UTC] PHP Notice:  Undefined variable: terms_post in C:\xampp\htdocs\project11\wp-content\themes\mytheme\partials\content-photo.php on line 60

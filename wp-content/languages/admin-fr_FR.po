@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 6.2.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-04-27 07:33:05+0000\n"
+"PO-Revision-Date: 2023-05-25 15:00:05+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -11075,7 +11075,7 @@ msgstr "Vous pouvez utiliser les contrôles suivants pour organiser l’écran d
 
 #: wp-admin/index.php:51
 msgid "The left-hand navigation menu provides links to all of the WordPress administration screens, with submenu items displayed on hover. You can minimize this menu to a narrow icon strip by clicking on the Collapse Menu arrow at the bottom."
-msgstr "La navigation située à gauche de l’écran fournit tous les liens pour accéder à la console d’administration de WordPress, avec les sous-menus qui s’affichant au survol. Vous pouvez réduire ce menu à ses seules icônes en cliquant sur la flèche de repliement située en bas du menu."
+msgstr "La navigation située à gauche de l’écran fournit tous les liens pour accéder à la console d’administration de WordPress, avec les sous-menus qui s’affichent au survol. Vous pouvez réduire ce menu à ses seules icônes en cliquant sur la flèche de repliement située en bas du menu."
 
 #: wp-admin/comment.php:62 wp-admin/edit-comments.php:189
 #: wp-admin/edit-form-advanced.php:344 wp-admin/edit-link-form.php:66
