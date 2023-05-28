@@ -72,38 +72,69 @@ function closeModal(){
 closeModal();
 
 /* Change arrow on select */
-$("select").click(function(){
+function changeSelectArrow(){
 
-    if($(this).hasClass('active_select')){
+    $("select").click(function(e){
+    
+        if(!$(this).is('.active_select')){
 
-        $(this).removeClass('active_select');
-    }
-    else{
+            $('.active_select').removeClass('active_select');
 
-        $(this).addClass('active_select');
-    }
+        }
+    
+        if($(this).hasClass('active_select')){
 
-});
+            $(this).removeClass('active_select');
+
+        }
+        else{
+
+            $(this).addClass('active_select');
+
+        }
+
+    });
+
+    document.addEventListener("click", function(e){
+
+        var container = $("select");
+
+        // if the target of the click isn't the container nor a descendant of the container
+        if (!container.is(e.target) && container.has(e.target).length === 0) 
+        {
+            container.removeClass('active_select');
+
+        }
+
+    });
+
+}
+changeSelectArrow();
 
 /* Hide scroll bar when mobile menu is shown */
-const body = document.querySelector("body");
-$('.navbar-toggler').click(function() {
+function hideScrollbar(){
 
-    let ariaExpended = $(this).attr('aria-expanded');
+    const body = document.querySelector("body");
+    $('.navbar-toggler').click(function() {
+    
+        let ariaExpended = $(this).attr('aria-expanded');
+    
+        if(ariaExpended == 'true'){
+            // Disable scroll
+            body.style.overflow = "hidden";
+    
+            $('.navbar-toggler-icon').removeClass('bi-list').addClass('bi-x-lg');
+          
+        }else{
+            // Disable scroll
+            body.style.overflow = "auto";
+            $('.navbar-toggler-icon').removeClass('bi-x-lg').addClass('bi-list');
+        }
+    
+    });
 
-    if(ariaExpended == 'true'){
-        // Disable scroll
-        body.style.overflow = "hidden";
-
-        $('.navbar-toggler-icon').removeClass('bi-list').addClass('bi-x-lg');
-      
-    }else{
-        // Disable scroll
-        body.style.overflow = "auto";
-        $('.navbar-toggler-icon').removeClass('bi-x-lg').addClass('bi-list');
-    }
-
-});
+}
+hideScrollbar();
 
 /*
  *
