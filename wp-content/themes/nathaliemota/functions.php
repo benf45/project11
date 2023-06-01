@@ -62,7 +62,14 @@ add_theme_support('custom-logo',  array('height'      => 190,
 			                            'width'       => 190,
 			                            'flex-width'  => true,
 			                            'flex-height' => true,));
-
+/**
+ * 
+ * Enable support for featured image.
+ *
+ */
+add_theme_support('post-thumbnails',  array('post',
+			                                'page',
+			                                'photo',));                                     
 
 /**
  * 
